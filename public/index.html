@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>HomecareGlasses - Call a Nurse</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <link rel="stylesheet" href="./css/agora.css">
+
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src = "https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.6.11.js"></script>
+    <script defer type = "module" src="./scripts/script.js"></script>
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">  
+</head>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <br>
+  <br>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="nine columns"><h2>HomecareGlasses - Call a Nurse 2</h2></div>
+    <br>
+
+
+    <div class="row">
+        <div class="nine columns shadow">
+            <div id="remote-container"></div>
+        </div>
+
+        <div class="three columns">
+            <div id="me" class = "shadow"></div>
+            <br>
+            <button class = "button-primary" id = "btnLeaveOnCLick">Leave</button>
+            <button class = "button-primary" id = "btnJournalNoteOnCLick">Journal note</button>
+            <textarea id = "textToken" rows = "6">Token</textarea>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
