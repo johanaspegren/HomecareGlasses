@@ -1,6 +1,3 @@
-// copied from 
-// https://docs.agora.io/en/3.x/video-calling/quickstart-guide/get-started-sdk
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 import { getDatabase, set, ref, update , onValue } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
@@ -90,20 +87,12 @@ function clientInit() {
     client.join(videoToken, 
     "callanurse2", null, (uid)=>{
         // Create a local stream
-        let localStream = AgoraRTC.createStream({
-            audio: true,
-            video: true,
-        });
-        // Initialize the local stream
-        localStream.init(()=>{
-            // Play the local stream
-            localStream.play("me");
-            // Publish the local stream
-            client.publish(localStream, handleError);
-        }, handleError);
-        
     }, handleError);
 
+    let localStream = AgoraRTC.createStream({
+        audio: true,
+        video: true,
+    });
     return localStream
 }
 
